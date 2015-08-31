@@ -1,0 +1,137 @@
+body{
+    font-family: 'Asap', sans-serif;
+    font-size: 13px;
+    background: #EEE;
+    color:#666;
+    padding:30px 0;
+}
+input:focus{
+    outline: none;
+}
+h1{
+    font-size: 20px;
+    margin:0 0 15px 0;
+    padding:0;
+}
+.clear-all{
+    margin:0 auto;
+    cursor: pointer;
+    text-align: center;
+    color:#000;
+    position: absolute;
+    right:20px;
+    top:20px;
+}
+#list-wrapper{
+    width:450px;
+    max-width: 500px;
+    background: #FFF;
+    border-radius: 10px;
+    padding:20px 20px 40px 20px;
+    margin:10px auto;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+    position: relative;
+}
+#list{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+#list li{
+    border-bottom: 1px solid #CCC;
+    line-height: 20px;
+    padding: 5px;
+    min-height: 35px;
+    position: relative;
+}
+#list li i{
+    padding-right: 5px;
+}
+.pending i{
+    color:#e30500;
+}
+.completed i{
+    color:#4ebef7;
+}
+#list li.completed {
+    text-decoration: line-through;
+}
+#list input{
+    border:0;
+    width:100%;
+    font-style: italic;
+}
+#list .completed input, #list .pending input{
+    width:90%;
+}
+.buttons{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.buttons span{
+    display: inline-block;
+    width:35px;
+    height:35px;
+    background: #999;
+    text-align: center;
+}
+.buttons .delete{
+    background: #ff9900;
+}
+.buttons .tocomplete{
+    background: #4ebef7;
+}
+.buttons .topending{
+    background: #e30500;
+}
+.buttons i{
+    color:#FFF;
+    padding:0 !important;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+}
+#bottom-nav{
+    text-align: center;
+}
+#bottom-nav span{
+    padding:0 5px;
+}
+footer{
+    text-align: center;
+    margin-top: 100px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+	/* Tablet Portrait size to standard 991 (devices and browsers) */
+	@media only screen and (max-width: 991px) {
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+        #list-wrapper{
+            width: 100%;
+        }
+	}
+	
+    @media only screen and (max-height: 650px) {
+    }
+
+	@media only screen and (orientation : portrait) {
+	}
